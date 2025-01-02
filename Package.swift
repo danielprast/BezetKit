@@ -10,15 +10,29 @@ let package = Package(
     .macOS(.v11)
   ],
   products: [
-    // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
       name: "BezelKit",
       targets: ["BezelKit"]
     ),
+    .library(
+      name: "BezelUIKit",
+      targets: ["BezelUIKit"]
+    )
+  ],
+  dependencies: [
+    .package(
+      url: "https://github.com/bhlvoong/LBTATools",
+      exact: "1.0.17"
+    ),
   ],
   targets: [
-    // Targets are the basic building blocks of a package, defining a module or a test suite.
-    // Targets can depend on other targets in this package and products from dependencies.
+    .target(
+      name: "BezelUIKit",
+      dependencies: [
+        "BezelKit",
+        "LBTATools"
+      ]
+    ),
     .target(
       name: "BezelKit"
     ),
