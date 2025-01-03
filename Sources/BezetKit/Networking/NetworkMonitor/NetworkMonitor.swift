@@ -1,6 +1,6 @@
 //
 //  NetworkMonitor.swift
-//  BezelKit
+//  BezetKit
 //
 //  Created by Daniel Prastiwa on 30/12/24.
 //

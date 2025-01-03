@@ -1,6 +1,6 @@
 //
 //  NetworkTypes.swift
-//  BezelKit
+//  BezetKit
 //
 //  Created by Daniel Prastiwa on 03/01/25.
 //

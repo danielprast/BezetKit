@@ -1,6 +1,6 @@
 //
 //  BasicTypes.swift
-//  BezelKit
+//  BezetKit
 //
 //  Created by Daniel Prastiwa on 03/01/25.
 //
@@ -9,8 +9,8 @@ import Foundation
 import Combine
 
 
-public typealias PublisherResult<T> = AnyPublisher<T, BezelKitError>
-public typealias PublisherTask<T> = Future<T, BezelKitError>
+public typealias PublisherResult<T> = AnyPublisher<T, BezetKitError>
+public typealias PublisherTask<T> = Future<T, BezetKitError>
 public typealias DestinationFileURL = URL
 
 

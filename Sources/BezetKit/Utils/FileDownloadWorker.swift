@@ -1,6 +1,6 @@
 //
 //  FileDownloadWorker.swift
-//  BezelKit
+//  BezetKit
 //
 //  Created by Daniel Prastiwa on 03/01/25.
 //
@@ -18,7 +18,7 @@ public protocol FileDownloadWorker {
   func performDownload(
     url: URL,
     fileName: String,
-    completion: @escaping (Result<DestinationFileURL, BezelKitError>) -> Void
+    completion: @escaping (Result<DestinationFileURL, BezetKitError>) -> Void
   )
 
 }

@@ -1,6 +1,6 @@
 //
 //  Errors.swift
-//  BezelKit
+//  BezetKit
 //
 //  Created by Daniel Prastiwa on 03/01/25.
 //
@@ -8,7 +8,7 @@
 import Foundation
 
 
-public enum BezelKitError: LocalizedError {
+public enum BezetKitError: LocalizedError {
   case custom(String)
   case responseError(String)
   case unauthorized           //Status code 401
@@ -24,7 +24,7 @@ public enum BezelKitError: LocalizedError {
 }
 
 
-extension BezelKitError {
+extension BezetKitError {
 
   public var description: String {
     switch self {
@@ -52,10 +52,10 @@ extension BezelKitError {
 }
 
 
-extension BezelKitError {
+extension BezetKitError {
 
   public static func makeErrorMessage(_ error: any Error) -> String {
-    guard let error = error as? BezelKitError else {
+    guard let error = error as? BezetKitError else {
       return defaultErrorMessage
     }
     return error.description
@@ -64,9 +64,9 @@ extension BezelKitError {
 }
 
 
-extension BezelKitError: Equatable {
+extension BezetKitError: Equatable {
 
-  public static func ==(lhs: BezelKitError, rhs: BezelKitError) -> Bool {
+  public static func ==(lhs: BezetKitError, rhs: BezetKitError) -> Bool {
     switch (lhs, rhs){
     case (unauthorized, unauthorized):
       return true
