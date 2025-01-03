@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-  name: "BezelKit",
+  name: "BezetKit",
   platforms: [
     .iOS(.v14),
     .macOS(.v11)
   ],
   products: [
     .library(
-      name: "BezelKit",
-      targets: ["BezelKit"]
+      name: "BezetKit",
+      targets: ["BezetKit"]
     ),
     .library(
-      name: "BezelUIKit",
-      targets: ["BezelUIKit"]
+      name: "BezetUIKit",
+      targets: ["BezetUIKit"]
     )
   ],
   dependencies: [
@@ -27,18 +27,18 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "BezelUIKit",
+      name: "BezetUIKit",
       dependencies: [
-        "BezelKit",
+        "BezetKit",
         "LBTATools"
       ]
     ),
     .target(
-      name: "BezelKit"
+      name: "BezetKit"
     ),
     .testTarget(
-      name: "BezelKitTests",
-      dependencies: ["BezelKit"]
+      name: "BezetKitTests",
+      dependencies: ["BezetKit"]
     ),
   ]
 )
