@@ -1,0 +1,15 @@
+{
+  "originHash" : "853106b5d6f560abea197f505a7aca37bba79fd07887a6012ac0dd9164fa085f",
+  "pins" : [
+    {
+      "identity" : "lbtatools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bhlvoong/LBTATools",
+      "state" : {
+        "revision" : "dce147bfbdc0417a4b430ec220c088629e9dc81d",
+        "version" : "1.0.17"
+      }
+    }
+  ],
+  "version" : 3
+}
