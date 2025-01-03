@@ -5,6 +5,7 @@
 //  Created by Daniel Prastiwa on 03/01/25.
 //
 
+import Foundation
 import UIKit
 import LBTATools
 
@@ -36,7 +37,7 @@ open class FileOwnerNibView: UIView {
   }
 
   open func setupBundle() {
-    self.bundleOrNil = .module
+    bundleOrNil = Foundation.Bundle.module
     fatalError("Must define bundle by overriding setupBundle()")
   }
 
