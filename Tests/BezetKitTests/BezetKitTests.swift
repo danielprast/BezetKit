@@ -1,7 +1,7 @@
 import XCTest
-@testable import BezelKit
+@testable import BezetKit
 
-final class BezelKitTests: XCTestCase {
+final class BezetKitTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

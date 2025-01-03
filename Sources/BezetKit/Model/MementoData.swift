@@ -8,7 +8,7 @@
 import Foundation
 
 
-extension BezelKitModule {
+extension BezetKitModule {
 
   public protocol MementoCareTaker {
     associatedtype Entity: DataEntity & Codable
@@ -31,6 +31,6 @@ extension BezelKitModule {
 }
 
 
-public typealias MementoCareTaker = BezelKitModule.MementoCareTaker
-public typealias MementoEntityCareTaker = BezelKitModule.MementoEntityCareTaker
-public typealias MementoOriginator = BezelKitModule.MementoOriginator
+public typealias MementoCareTaker = BezetKitModule.MementoCareTaker
+public typealias MementoEntityCareTaker = BezetKitModule.MementoEntityCareTaker
+public typealias MementoOriginator = BezetKitModule.MementoOriginator
