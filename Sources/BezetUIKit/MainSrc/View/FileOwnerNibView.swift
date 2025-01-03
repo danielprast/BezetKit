@@ -37,7 +37,7 @@ open class FileOwnerNibView: UIView {
   }
 
   open func setupBundle() {
-    bundleOrNil = Foundation.Bundle.module
+    bundleOrNil = nil
     fatalError("Must define bundle by overriding setupBundle()")
   }
 
