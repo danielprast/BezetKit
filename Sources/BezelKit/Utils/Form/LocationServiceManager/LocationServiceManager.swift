@@ -64,8 +64,6 @@ public final class LocationServiceManager: NSObject {
     _ manager: CLLocationManager,
     didUpdateLocations locations: [CLLocation]
   ) {
-    nlog("did update locations", locations)
-
     coordinates = locations.map {
       LocationCoordinate.init(
         latitude: $0.coordinate.latitude,
