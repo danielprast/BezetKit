@@ -10,9 +10,17 @@ import UIKit
 
 extension UIViewController {
 
-  public var topbarHeight: CGFloat {
+  public var topBarHeight: CGFloat {
     return (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0) +
     (self.navigationController?.navigationBar.frame.height ?? 0.0)
+  }
+
+  public var statusBarHeight: CGFloat {
+    view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0
+  }
+
+  public var navigationBarHeight: CGFloat {
+    navigationController?.navigationBar.frame.height ?? 0.0
   }
 
   public func attachViewController(
